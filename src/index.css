@@ -1,0 +1,53 @@
+.nav-link {
+  color: white !important;
+}
+
+.custom-hover {
+  position: relative;
+  color: white;
+  transition: color 500ms ease-in-out;
+  
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.custom-hover:hover {
+  color: black;
+}
+
+.custom-hover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border-radius: inherit;
+  z-index: -1;
+  width: 0;
+  height: 100%;
+
+  transform-origin: left center; /* Transform origin at left center */
+  transform: scaleY(0); /* Scale height to 0 initially */
+  /* transform: ; */
+  transition: width 1000ms ease-in-out, transform 500ms ease-in-out;;
+}
+
+.custom-hover:hover::before,
+.custom-hover:focus::before
+ {
+  /* transform: ; */
+  width: 100%;
+  transform: scaleY(1);
+}
+
+.custom-hover {
+  z-index: 1;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
