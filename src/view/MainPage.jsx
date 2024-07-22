@@ -80,7 +80,7 @@ function MainPage() {
             </ParallaxLayer>
         </Parallax> */}
 
-        <div className='mt-[200px]'>
+        <div>
             <IntroductionSection/>
         </div>
 

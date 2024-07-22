@@ -22,22 +22,22 @@ function TrustedBySection() {
 
             </div>
 
-            <div className='w-[60%] py-[60px] flex justify-between px-10'>
-                <div className='flex flex-col justify-end'>
-                    <div className='flex items-center justify-center w-[250px] h-[180px] rounded-md px-3 shadow-2xl my-4' style={{boxShadow: '0 8px 16px rgba(0, 0, 0, 0.1)'}}><img src={Logo5}/></div>
-                    <div className='flex items-center justify-center w-[250px] h-[180px] rounded-md px-3 shadow-2xl my-4' style={{boxShadow: '0 8px 16px rgba(0, 0, 0, 0.1)'}}><img src={Logo4}/></div>
+            <div className='w-[60%] py-[20vh] flex justify-between px-[5vw]'>
+                <div className='flex flex-col justify-end pb-4'>
+                    <div className='flex items-center justify-center w-[15vw] h-[180px] rounded-md px-3 shadow-2xl my-4' style={{boxShadow: '0 8px 16px rgba(0, 0, 0, 0.1)'}}><img src={Logo5}/></div>
+                    <div className='flex items-center justify-center w-[15vw] h-[180px] rounded-md px-3 shadow-2xl my-4' style={{boxShadow: '0 8px 16px rgba(0, 0, 0, 0.1)'}}><img src={Logo4}/></div>
 
                 </div>
 
-                <div>
-                    <div className='flex items-center justify-center w-[250px] h-[180px] rounded-md px-3 shadow-2xl my-4' style={{boxShadow: '0 8px 16px rgba(0, 0, 0, 0.1)'}}><img src={Logo1}/></div>
-                    <div className='flex items-center justify-center w-[250px] h-[180px] rounded-md px-3 shadow-2xl my-4' style={{boxShadow: '0 8px 16px rgba(0, 0, 0, 0.1)'}}><img src={Logo2}/></div>
-                    <div className='flex items-center justify-center w-[250px] h-[180px] rounded-md px-3 shadow-2xl my-4' style={{boxShadow: '0 8px 16px rgba(0, 0, 0, 0.1)'}}><img src={Logo7}/></div>
+                <div className='flex flex-col justify-between'>
+                    <div className='flex items-center justify-center w-[15vw] h-[180px] rounded-md px-3 shadow-2xl my-4' style={{boxShadow: '0 8px 16px rgba(0, 0, 0, 0.1)'}}><img src={Logo1}/></div>
+                    <div className='flex items-center justify-center w-[15vw] h-[180px] rounded-md px-3 shadow-2xl my-4' style={{boxShadow: '0 8px 16px rgba(0, 0, 0, 0.1)'}}><img src={Logo2}/></div>
+                    <div className='flex items-center justify-center w-[15vw] h-[180px] rounded-md px-3 shadow-2xl my-4' style={{boxShadow: '0 8px 16px rgba(0, 0, 0, 0.1)'}}><img src={Logo7}/></div>
                 </div>
 
                 <div className='pt-4'>
-                    <div className='flex items-center justify-center w-[250px] h-[180px] rounded-md px-3 shadow-2xl my-4' style={{boxShadow: '0 8px 16px rgba(0, 0, 0, 0.1)'}}><img src={Logo3}/></div>
-                    <div className='flex items-center justify-center w-[250px] h-[180px] rounded-md px-3 shadow-2xl my-4' style={{boxShadow: '0 8px 16px rgba(0, 0, 0, 0.1)'}}><img src={Logo6}/></div>
+                    <div className='flex items-center justify-center w-[15vw] h-[180px] rounded-md px-3 shadow-2xl my-4' style={{boxShadow: '0 8px 16px rgba(0, 0, 0, 0.1)'}}><img src={Logo3}/></div>
+                    <div className='flex items-center justify-center w-[15vw] h-[180px] rounded-md px-3 shadow-2xl my-4' style={{boxShadow: '0 8px 16px rgba(0, 0, 0, 0.1)'}}><img src={Logo6}/></div>
 
                 </div>
 
