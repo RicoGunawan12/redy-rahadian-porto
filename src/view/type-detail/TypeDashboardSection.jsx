@@ -7,18 +7,21 @@ import Sculpture4 from '../../assets/sculptures/scrulpture4.JPG'
 
 function TypeDashboardSection() {
   return (
-    <div className='min-h-[100vh] bg-[black] pb-20 relative'>
+    <div className='min-h-[130vh] bg-[black] pb-20 relative'>
         {/* <div className='absolute w-full h-full'>
         </div> */}
-        <div><NavigationBar/></div>
+        <div className='z-3'><NavigationBar/></div>
+        <div className='absolute w-[100vw] h-[120vh] z-2 bg-black opacity-[0.5]'>
         
-        <img className='absolute w-[200px]' src={Sculpture1}/>
-        <img className='absolute w-[200px] left-20' src={Sculpture2}/>
-        <img className='absolute w-[200px] left-20' src={Sculpture3}/>
-        <img className='absolute w-[200px] left-20' src={Sculpture4}/>
+
+        </div>
+          <img className='absolute w-[400px] bottom-3 right-[14vw]' src={Sculpture1}/>
+        <img className='absolute w-[200px] bottom-0 left-[17vw]' src={Sculpture2}/>
+        <img className='absolute w-[100px] right-[36vw] top-[400px]' src={Sculpture3}/>
+        <img className='absolute w-[20vw] h-[14vw] object-cover object-center left-[27vw] top-[200px]' src={Sculpture4}/>
 
         <div className='flex justify-center items-center h-[80vh]'>
-          <div className='text-white text-[54px] font-semibold z-[99]'>ART SCULPTURE</div>
+          <div className='text-white text-[64px] font-semibold z-[99]'>ART SCULPTURE</div>
         </div>
 
     </div>

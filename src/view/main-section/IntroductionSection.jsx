@@ -8,7 +8,7 @@ function IntroductionSection() {
     threshold: 0.3,    // Trigger when 10% of the component is visible
   });
   return (
-    <div className='mx-[15vw]' ref={ref}>
+    <div className='mx-[15vw] h-[100vh] flex items-center' ref={ref}>
         <motion.div
           initial={{ y: 500 }}
           animate={inView ? { y: 0 } : { y: 500 }}

@@ -2,6 +2,12 @@ import React from 'react'
 import Artwork1 from '../../assets/artwork1.png';
 
 function KeepTouchSection() {
+
+    const handleFocus = (event) => {
+        event.target.style.outline = 'none';
+        event.target.style.borderBottom = '2px solid black';
+    };
+
   return (
     <div className='w-[100vw] h-[90vh] mt-[10vh]'>
         <div>
@@ -17,17 +23,17 @@ function KeepTouchSection() {
             <div className='w-[60%]'>
                 <div className='w-full my-4'>
                     <div className='text-[#666666] text-[18px]'><label>Full Name</label></div>
-                    <div><input className='border-b-2 border-[#666666] w-full pt-4 pb-2 px-2'/></div>
+                    <div><input onFocus={handleFocus} className='border-b-2 border-[#666666] w-full pt-4 pb-2'/></div>
                 </div>
 
                 <div className='w-full my-4'>
                     <div className='text-[#666666] text-[18px]'><label>Email</label></div>
-                    <div><input className='border-b-2 border-[#666666] w-full pt-4 pb-2 px-2'/></div>
+                    <div><input onFocus={handleFocus} className='border-b-2 border-[#666666] w-full pt-4 pb-2'/></div>
                 </div>
 
                 <div className='w-full my-4'>
                     <div className='text-[#666666] text-[18px]'><label>Message</label></div>
-                    <div><input className='border-b-2 border-[#666666] w-full pt-4 pb-2 px-2'/></div>
+                    <div><input onFocus={handleFocus} className='border-b-2 border-[#666666] w-full pt-4 pb-2'/></div>
                 </div>
                 
                 <div className='flex mt-12'>

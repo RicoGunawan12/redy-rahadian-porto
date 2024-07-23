@@ -6,8 +6,8 @@ import Logo from '../../assets/logo.png'
 
 function NavigationBar() {
   return (
-    <Navbar expand="lg" data-bs-theme="dark" className="text-[white] bg-[#0000] px-4 py-10" style={{padding: '50px'}}>
-        <Container>
+    <Navbar expand="lg" data-bs-theme="dark" className="text-[white] bg-[#0000]" style={{padding: '50px'}}>
+        <div className='flex justify-between w-full mx-[5vw]'>
             <Navbar.Brand href="/dashboard" className='font-bold' style={{fontSize:'28px'}}><img width={35} src={Logo}/></Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav" className="justify-content-between">
@@ -22,7 +22,7 @@ function NavigationBar() {
                     <Nav.Link style={{paddingRight:'50px', color:'white', fontSize:'18px'}} href="#link">Contact</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
-        </Container>
+        </div>
     </Navbar>
 
   );

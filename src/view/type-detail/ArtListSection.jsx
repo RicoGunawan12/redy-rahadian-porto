@@ -9,7 +9,7 @@ function ArtListSection() {
     }
 
   return (
-    <div className='min-h-[100vh] bg-[black] pb-20 text-white px-[10vw]'>
+    <div className='min-h-[100vh] bg-[black] pb-[200px] text-white px-[10vw] pt-[200px]'>
         <div className='font-semibold text-[24px] mb-10'>Art list</div>
 
         <div className='w-full h-full flex justify-center'>
