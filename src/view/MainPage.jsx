@@ -12,6 +12,7 @@ import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import BiographySection from './main-section/BiographySection';
 import BiographySection2 from './main-section/BiographySection2';
 import TrustedBySection from './main-section/TrustedBySection';
+import { motion } from 'framer-motion';
 
 function MainPage() {
     useEffect(() => {
@@ -19,7 +20,12 @@ function MainPage() {
     }, []);    
 
   return (
-    <div className='overflow-x-hidden'>
+    <motion.div
+    initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 1 }}
+     className='overflow-x-hidden'>
         
         <div>
             <DashboardSection/>
@@ -130,7 +136,7 @@ function MainPage() {
         <div>
             <Footer/>
         </div>
-    </div>
+    </motion.div>
   )
 }
 
