@@ -90,7 +90,7 @@ function MainPage() {
             <IntroductionSection/>
         </div>
 
-        <div className='mt-[200px]'>
+        <div>
             <BiographySection/>
         </div>
         <div>
