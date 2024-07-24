@@ -18,7 +18,7 @@ function CuratorSection() {
         textOverflow: 'ellipsis',
       };
   return (
-    <div className='w-[100vw] h-[110vh] pt-[150px] relative z-8' ref={ref}>
+    <div className='w-[100vw] h-[110vh] pt-[150px] relative z-[8] bg-white' ref={ref}>
         <motion.div
             initial={{ y: '-100vh' }}
             animate={inView ? { y: '0%' } : { y: '-100vh' }}

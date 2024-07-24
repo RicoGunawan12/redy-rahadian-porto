@@ -4,6 +4,7 @@ import ArtListSection from './type-detail/ArtListSection'
 import KeepTouchSection from './main-section/KeepTouchSection'
 import MapSection from './main-section/MapSection'
 import Footer from './component/Footer'
+import NextArtSection from './type-detail/NextArtSection'
 
 function TypeDetailPage() {
   return (
@@ -15,6 +16,15 @@ function TypeDetailPage() {
         <div>
             <ArtListSection/>
         </div>
+
+        <div>
+            <NextArtSection/>
+        </div>
+
+        <div>
+            <hr/>
+        </div>
+        
 
         <div>
             <KeepTouchSection/>

@@ -6,20 +6,24 @@ import { motion } from 'framer-motion';
 function NewsSection() {
     const { ref, inView } = useInView({
         triggerOnce: true, // Ensures animation happens only once
-        threshold: 0.5,    // Trigger when 10% of the component is visible
+        threshold: 0.3,    // Trigger when 10% of the component is visible
       });
   return (
     <div className='w-[100vw] min-h-[170vh] pb-6 mt-[10vh] z-[7] relative' ref={ref}>
         <motion.div 
-            initial={{ y: -200 }}
-            animate={inView ? { y: 0 } : { y: -200 }}
+            initial={{ y: -250 }}
+            animate={inView ? { y: 0 } : { y: -250 }}
             transition={{ duration: 0.5 }}
             className='relative z-[7]'>
             <div className='text-center font-bold text-[72px]'>NEWS & ARTICLE</div>
             <div className='text-center text-[#9CA3AF] mt-2'>Innovative Techniques in Modern Sculpture</div>
         </motion.div>
 
-        <div className='grid grid-cols-3 mx-[12vw] gap-4 mt-4'>
+        <motion.div 
+            initial={{ opacity: 0 }}
+            animate={inView ? { opacity: 1 } : { opacity: 0 }}
+            transition={{ duration: 0.5 }} 
+            className='grid grid-cols-3 mx-[12vw] gap-4 mt-4'>
 
             <div className='border-1 border-[#D9D9D9] px-3 py-3'>
                 <div><img src={Curator3} className='w-full h-[30vh] object-cover object-center'/></div>
@@ -104,7 +108,7 @@ function NewsSection() {
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
 
         <div className='flex justify-center text-white hover:cursor-pointer'>
             <div className='mt-10 border-[white] bg-[black] border-1 px-14 py-2 rounded-full'>View More</div>
