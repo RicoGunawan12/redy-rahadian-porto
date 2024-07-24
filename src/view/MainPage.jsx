@@ -86,14 +86,14 @@ function MainPage() {
             </ParallaxLayer>
         </Parallax> */}
 
-        <div>
+        <div className='relative z-55'>
             <IntroductionSection/>
         </div>
 
-        <div>
+        <div className='relative z-20'>
             <BiographySection/>
         </div>
-        <div>
+        <div className='relative z-10'>
             <BiographySection2/>
         </div>
 
