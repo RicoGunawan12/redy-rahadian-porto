@@ -97,11 +97,11 @@ function MainPage() {
             <BiographySection2/>
         </div>
 
-        <div className='mt-[200px]'>
+        <div className='mt-[200px] relative z-[9]'>
             <ArtWorkSection/>
         </div>
 
-        <div>
+        <div className='relative z-8'>
             <CuratorSection/>
         </div>
 
@@ -109,7 +109,7 @@ function MainPage() {
             <hr/>
         </div>
 
-        <div>
+        <div className='relative z-[7]'>
             <NewsSection/>
         </div>
 

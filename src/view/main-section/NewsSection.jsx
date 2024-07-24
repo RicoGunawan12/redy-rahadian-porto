@@ -1,13 +1,23 @@
 import React from 'react'
 import Curator3 from '../../assets/curator3.jpeg';
+import { useInView } from 'react-intersection-observer';
+import { motion } from 'framer-motion';
 
 function NewsSection() {
+    const { ref, inView } = useInView({
+        triggerOnce: true, // Ensures animation happens only once
+        threshold: 0.5,    // Trigger when 10% of the component is visible
+      });
   return (
-    <div className='w-[100vw] min-h-[170vh] pb-6 mt-[10vh]'>
-        <div>
+    <div className='w-[100vw] min-h-[170vh] pb-6 mt-[10vh] z-[7] relative' ref={ref}>
+        <motion.div 
+            initial={{ y: -200 }}
+            animate={inView ? { y: 0 } : { y: -200 }}
+            transition={{ duration: 0.5 }}
+            className='relative z-[7]'>
             <div className='text-center font-bold text-[72px]'>NEWS & ARTICLE</div>
             <div className='text-center text-[#9CA3AF] mt-2'>Innovative Techniques in Modern Sculpture</div>
-        </div>
+        </motion.div>
 
         <div className='grid grid-cols-3 mx-[12vw] gap-4 mt-4'>
 

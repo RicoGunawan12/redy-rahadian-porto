@@ -6,10 +6,10 @@ import { useInView } from 'react-intersection-observer';
 function BiographySection2() {
     const { ref, inView } = useInView({
         triggerOnce: true, // Ensures animation happens only once
-        threshold: 0.3,    // Trigger when 10% of the component is visible
+        threshold: 0.5,    // Trigger when 10% of the component is visible
       });
     return (
-        <div className='w-[100vw] h-[100vh] relative z-10' ref={ref}>
+        <div className='w-[100vw] h-[100vh] relative z-10 bg-[white]' ref={ref}>
             <div className='flex h-full items-center'>
                 <div className='w-[50%] pl-[10%] pr-[80px] '>
                     <div>

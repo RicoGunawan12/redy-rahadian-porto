@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 function BiographySection() {
     const { ref, inView } = useInView({
         triggerOnce: true, // Ensures animation happens only once
-        threshold: 0.3,    // Trigger when 10% of the component is visible
+        threshold: 0.5,    // Trigger when 10% of the component is visible
       });
 
   return (

@@ -5,7 +5,7 @@ import { useInView } from 'react-intersection-observer';
 function IntroductionSection() {
   const { ref, inView } = useInView({
     triggerOnce: true, // Ensures animation happens only once
-    threshold: 0.3,    // Trigger when 10% of the component is visible
+    threshold: 0.5,    // Trigger when 10% of the component is visible
   });
   return (
     <div className='px-[15vw] h-[100vh] flex items-center relative z-[100] bg-[white]' ref={ref}>
