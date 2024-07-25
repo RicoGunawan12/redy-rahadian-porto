@@ -38,7 +38,22 @@ function KeepTouchSection() {
                 </div>
                 
                 <div className='flex mt-12'>
-                <Link to={'/more-art'}><div className='px-10 py-2 text-[18px] rounded-full reverse-custom-hover hover:cursor-pointer'><span className='relative z-[200]'>Submit</span></div></Link>
+                <Link to={'/more-art'}>
+                    <div className='px-10 py-2 text-[18px] rounded-full reverse-custom-hover hover:cursor-pointer group'>
+                        <span className='relative z-[200] flex'>
+                            Submit
+                            <svg 
+                                className='w-6 ml-2 fill-black group-hover:fill-white transition-colors duration-100' 
+                                xmlns="http://www.w3.org/2000/svg" 
+                                viewBox="0 0 24 24" 
+                                id="arrow-up-right"
+                            >
+                                <path d="M17.92,6.62a1,1,0,0,0-.54-.54A1,1,0,0,0,17,6H7A1,1,0,0,0,7,8h7.59l-8.3,8.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0L16,9.41V17a1,1,0,0,0,2,0V7A1,1,0,0,0,17.92,6.62Z"></path>
+                            </svg>
+                        </span>
+                    </div>
+                </Link>
+
                     {/* <div className='border-[black] border-1 rounded-full px-10 py-2 text-[18px]'>
                         Submit
                     </div> */}

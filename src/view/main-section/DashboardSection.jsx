@@ -1,6 +1,7 @@
 import React from 'react'
 import NavigationBar from '../component/NavigationBar'
 import { motion } from 'framer-motion';
+import SpinningText from '../component/SpinningText';
 
 function DashboardSection() {
   return (
@@ -32,6 +33,24 @@ function DashboardSection() {
             <div className='text-[32px]'>Modern &</div>
             <div className='text-[32px]'>Contemporary Artist</div>
         </motion.div>
+        
+        <motion.div
+         initial={{ x: 500 }}
+         animate={{ x: 0 }}
+        //  exit={{ opacity: 0 }}
+         transition={{ duration: 0.5, delay: 1 }}
+         className='absolute top-[300px] right-[11vw]'>
+            <div className='h-[40px] w-[40px] text-white'>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="arrow-down-left"><path fill="white" d="M17,16H9.41l8.3-8.29a1,1,0,1,0-1.42-1.42L8,14.59V7A1,1,0,0,0,6,7V17a1,1,0,0,0,.08.38,1,1,0,0,0,.54.54A1,1,0,0,0,7,18H17a1,1,0,0,0,0-2Z"></path></svg>
+            </div>
+
+        </motion.div>
+
+        
+
+        <div className='absolute bottom-[200px] left-1/2 -translate-x-1/2'>
+          <SpinningText/>
+        </div>
     </div>
   )
 }
