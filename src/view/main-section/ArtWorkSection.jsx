@@ -34,28 +34,28 @@ function ArtWorkSection() {
               <div className='h-full w-full text-[24px] justify-center flex items-end pb-12'>Art Sculpture</div>
             </div>
             <div className='w-full h-full transition duration-500 absolute hover:cursor-pointer'></div>
-            <div><img src={Artwork1} className='h-[60vh] w-[300px] px-[5vw] py-[20px] object-cover object-center border-1'/></div>
+            <div><img src={Artwork1} className='h-[60vh] w-[300px] px-[50px] py-[20px] object-cover object-center border-1'/></div>
           </div>
           
           <div className='relative bg-black'>
-            <div className='absolute text-[24px] text-white border-[4px] w-[90%] h-[95%] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 transform hover:cursor-pointer hover:opacity-1'>
-              <div className='h-full w-full text-[24px] justify-center flex items-end pb-12'>Art Product</div>
+            <div className='absolute z-[2] text-[24px] text-white border-[4px] w-[90%] h-[92%] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-[0] hover:opacity-[100] transition-opacity duration-500 cursor-pointer'>
+              <div className='h-full w-full text-[24px] justify-center flex items-end pb-12'>Art Sculpture</div>
             </div>
             <div className='w-full h-full transition duration-500 absolute hover:cursor-pointer'></div>
-            <div><img src={Artwork2} className='h-[60vh] w-[300px] px-[5vw] py-[20px] object-cover object-center border-1'/></div>
+            <div><img src={Artwork2} className='h-[60vh] w-[300px] px-[50px] py-[20px] object-cover object-center border-1'/></div>
           </div>
           
           <div className='relative bg-black'>
-            <div className='absolute text-[24px] text-white border-[4px] w-[90%] h-[95%] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 transform hover:cursor-pointer hover:opacity-1'>
-              <div className='h-full w-full text-[24px] justify-center flex items-end pb-12'>Art Facade</div>
+            <div className='absolute z-[2] text-[24px] text-white border-[4px] w-[90%] h-[92%] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-[0] hover:opacity-[100] transition-opacity duration-500 cursor-pointer'>
+              <div className='h-full w-full text-[24px] justify-center flex items-end pb-12'>Art Sculpture</div>
             </div>
             <div className='w-full h-full transition duration-500 absolute hover:cursor-pointer'></div>
             <div><img src={Artwork3} className='h-[60vh] w-[300px] object-cover object-center border-1'/></div>
           </div>
           
           <div className='relative bg-black'>
-            <div className='absolute text-[24px] text-white border-[4px] w-[90%] h-[95%] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 transform hover:cursor-pointer hover:opacity-1'>
-              <div className='h-full w-full text-[24px] justify-center flex items-end pb-12'>Art Building</div>
+            <div className='absolute z-[2] text-[24px] text-white border-[4px] w-[90%] h-[92%] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-[0] hover:opacity-[100] transition-opacity duration-500 cursor-pointer'>
+              <div className='h-full w-full text-[24px] justify-center flex items-end pb-12'>Art Sculpture</div>
             </div>
             <div className='w-full h-full transition duration-500 absolute hover:cursor-pointer'></div>
             <div><img src={Artwork4} className='h-[60vh] w-[300px] object-cover object-center border-1'/></div>
@@ -63,7 +63,7 @@ function ArtWorkSection() {
         </motion.div>
 
         <div className='flex justify-center'>
-          <Link to={'/more-art'}><div className='bg-[black] mt-10 px-14 py-2 rounded-full custom-hover hover:cursor-pointer'>View More</div></Link>
+          <Link to={'/more-art'}><div className='mt-10 px-14 py-2 rounded-full custom-hover hover:cursor-pointer'><span className='relative z-[200]'>View More</span></div></Link>
         </div>
     </div>
   )

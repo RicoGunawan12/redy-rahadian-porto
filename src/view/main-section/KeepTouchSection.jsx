@@ -1,5 +1,6 @@
 import React from 'react'
 import Artwork1 from '../../assets/artwork1.png';
+import { Link } from 'react-router-dom';
 
 function KeepTouchSection() {
 
@@ -37,9 +38,10 @@ function KeepTouchSection() {
                 </div>
                 
                 <div className='flex mt-12'>
-                    <div className='border-[black] border-1 rounded-full px-10 py-2 text-[18px]'>
+                <Link to={'/more-art'}><div className='px-10 py-2 text-[18px] rounded-full reverse-custom-hover hover:cursor-pointer'><span className='relative z-[200]'>Submit</span></div></Link>
+                    {/* <div className='border-[black] border-1 rounded-full px-10 py-2 text-[18px]'>
                         Submit
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>

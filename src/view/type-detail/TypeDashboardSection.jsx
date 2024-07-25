@@ -15,7 +15,7 @@ function TypeDashboardSection() {
         <motion.div
           initial={{ y: -100 }}
           animate={{ y: 0 }}
-          transition={{ duration: 0.5, delay: 1 }}
+          transition={{ duration: 0.5, delay: 5.5 }}
           className='z-3'
         >
           <NavigationBar/>
@@ -23,7 +23,7 @@ function TypeDashboardSection() {
         <motion.div 
           initial={{ opacity: 0 }}
           animate={{ opacity: 0.5 }}
-          transition={{ duration: 1, delay: 1 }}  
+          transition={{ duration: 1, delay: 5 }}  
           className='absolute w-[100vw] h-[120vh] z-2 bg-black opacity-[0.5]'>
         
 
@@ -31,35 +31,35 @@ function TypeDashboardSection() {
         <motion.img 
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 1 }}  
+          transition={{ duration: 1, delay: 5 }}  
           className='absolute w-[350px] bottom-3 right-[14vw]' src={Sculpture1}
         />
           
         <motion.img 
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 1 }}  
+          transition={{ duration: 1, delay: 5 }}  
           className='absolute w-[150px] bottom-0 left-[17vw]' src={Sculpture2}
         />
         
         <motion.img 
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 1 }}
+          transition={{ duration: 1, delay: 5 }}
           className='absolute w-[100px] right-[36vw] top-[250px]' src={Sculpture3}
         />
         
         <motion.img 
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 1 }}  
+          transition={{ duration: 1, delay: 5 }}  
           className='absolute w-[20vw] h-[14vw] object-cover object-center left-[27vw] top-[200px]' src={Sculpture4}
         />
 
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 1 }}  
+          transition={{ duration: 1, delay: 5 }}  
           className='flex justify-center items-center h-[80vh]'>
           <div className='text-white text-[64px] font-semibold z-[99]'>ART SCULPTURE</div>
         </motion.div>

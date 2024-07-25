@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import TypeDashboardSection from './type-detail/TypeDashboardSection'
 import ArtListSection from './type-detail/ArtListSection'
 import KeepTouchSection from './main-section/KeepTouchSection'
@@ -10,15 +10,24 @@ import { motion } from 'framer-motion';
 import '../index.css';
 
 function TypeDetailPage() {
+    const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsVisible(true);
+    }, 4500); // 5000 milliseconds = 5 seconds
+
+    return () => clearTimeout(timer); // Clean up the timer on component unmount
+  }, []);
   return (
     <div className='overflow-x-hidden overflow-y-hidden relative'>
 
-        <div className='h-[100vh] w-[100vw] bg-black overflow-hidden'>
+        <div className='h-[100vh] w-[100vw] bg-black overflow-hidden' style={isVisible ? {display: 'none'} : {}}>
             <img src={Animation} className='custom-animation absolute object-cover object-center top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10'/>
         
         </div>
 
-        <div className='hidden'>
+        <div className={isVisible ? '' : 'hidden'}>
             <div>
                 <TypeDashboardSection/>
             </div>
