@@ -29,8 +29,8 @@ function ArtWorkSection() {
           animate={inView ? { opacity: 1 } : { opacity: 0 }}
           transition={{ duration: 0.5 }} 
         >
-          <div className='relative bg-black'>
-            <div className='absolute text-[24px] text-white border-[4px] w-[90%] h-[95%] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 hover:opacity-100 transition-opacity duration-500 cursor-pointer'>
+          <div className='relative z-[1] bg-black'>
+            <div className='absolute z-[2] text-[24px] text-white border-[4px] w-[90%] h-[92%] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-[0] hover:opacity-[100] transition-opacity duration-500 cursor-pointer'>
               <div className='h-full w-full text-[24px] justify-center flex items-end pb-12'>Art Sculpture</div>
             </div>
             <div className='w-full h-full transition duration-500 absolute hover:cursor-pointer'></div>
