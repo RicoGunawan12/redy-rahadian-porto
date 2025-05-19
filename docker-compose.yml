@@ -1,0 +1,6 @@
+version: "3"
+services:
+  redy-rahadian:
+    build: .
+    ports:
+      - "3051:3000"
