@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import DescriptionSection from './viewmore-section/DescriptionSection'
 import KeepTouchSection from './main-section/KeepTouchSection'
 import MapSection from './main-section/MapSection'
@@ -7,6 +7,9 @@ import ArtWorkSection from './main-section/ArtWorkSection'
 import { motion } from 'framer-motion';
 
 function ViewMoreArtPage() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
   return (
     <motion.div
         initial={{ opacity: 0 }}

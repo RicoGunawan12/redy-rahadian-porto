@@ -2,6 +2,7 @@ import React from 'react'
 import Curator3 from '../../assets/curator3.jpeg';
 import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 function NewsSection() {
     const { ref, inView } = useInView({
@@ -111,7 +112,7 @@ function NewsSection() {
         </motion.div>
 
         <div className='flex justify-center text-white hover:cursor-pointer'>
-            <div className='mt-10 border-[white] bg-[black] border-1 px-14 py-2 rounded-full'>View More</div>
+            <Link to={'/more-art'}><div className='mt-10 px-10 py-2 text-[18px] rounded-full custom-hover hover:cursor-pointer'><span className='relative z-[200]'>View More</span></div></Link>  
         </div>
     </div>
   )
