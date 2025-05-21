@@ -20,7 +20,8 @@ function IntroductionSection() {
         className="relative z-[100]"
       >
         <div className="text-center text-[72px] font-bold">
-          RICO gajadi RAHADIAN IS AN ACCOMPLISED SCULPTURE ARTIST FROM INDONESIA
+          RICO testing RAHADIAN IS AN ACCOMPLISED SCULPTURE ARTIST FROM
+          INDONESIA
         </div>
         <div className="text-center mx-[10vw] mt-4">
           Redy Rahadian believes in inspiring others. He is passionate in
